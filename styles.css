@@ -81,6 +81,33 @@ button:active{
     font-size: 1.5rem;
 }
 
+/* Loader */
+.loader{
+    border: 10px solid #333;
+    border-top: 10px solid turquoise;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader-bg{
+    background-image: url(images/favicon.ico);
+    border-radius: 50%;
+    border: none;
+    width: 48px;
+    height: 48px;
+    animation: spinback 1s linear infinite;
+}
+@keyframes spinback{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
 /* For tablet size screens or
  smaller */
 @media screen and (max-width: 1000px) {
